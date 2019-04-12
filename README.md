@@ -49,7 +49,7 @@ is provided followed by the final conclusions of this project's complex architec
  
 [Spring Framework](https://spring.io/) for Java was born in February 2003 after 
 [Rod Johnson](https://twitter.com/springrod)'s 
-book Expert One-on-One J2EE Design and Development [6] was published. In his book the author 
+book Expert One-on-One J2EE Design and Development [6] was published. In his book, the author 
 described how a scalable high-quality application can be developed without Enterprise 
 JavaBeans (EJB) framework using dependency injection in addition to ordinary java classes. Over 
 the years, one of the most criticized aspects of the Spring Framework was the complex dependency 
@@ -63,13 +63,13 @@ unique and easy to use:
 environment and information provided by the developer
 
 *  **stand-alone** - eliminating the need of deploying to a web server or any other special 
-environment by embedding Jetty or Tomcat servers directly 
+environment by embedding Tomcat, Jetty or Undertow servers directly 
 
 * **opinionated** - saving developer's time by configuring the most popular libraries 
 by default in the most standard way 
 
 
-Due to the power of creating Spring-based applications that can "just be run", 
+Due to the power of creating Spring-based applications that can "just run", 
 Spring Boot's popularity grew faster. Spring Boot is being used by many large companies such as 
 [Netflix](https://hub.packtpub.com/netflix-adopts-spring-boot-as-its-core-java-framework/),
 [American Express](https://www.linkedin.com/jobs/view/engineer-java-web-app-dev-spring-boot-at-american-express-613972702/),
@@ -139,7 +139,7 @@ Gitter</a>.
     <a href="https://spring.io/team/snicoll">Stéphane Nicoll</a>, 
     <a href="https://spring.io/team/awilkinson">Andy Wilkinson</a>, 
     <a href="https://spring.io/team/mbhave">Madhura Bhave</a>. 
-    The founder <a href="https://spring.io/team/dsyer">Dave Syer</a> and co-found 
+    The founder <a href="https://spring.io/team/dsyer">Dave Syer</a> and co-founder 
     <a href="https://spring.io/team/pwebb">Phil Webb</a> have also contributed a lot in 
     the development process. 
    </td>
@@ -149,7 +149,7 @@ Gitter</a>.
    </td>
    <td>Overlapping with developers. Mostly <a href="https://spring.io/team/snicoll">
    Stéphane Nicoll</a>, <a href="https://spring.io/team/awilkinson">Andy Wilkinson</a>, 
-   <a href="https://spring.io/team/mbhave">Madhura Bhave</a>. People from the Java community 
+   <a href="https://spring.io/team/mbhave">Madhura Bhave</a>. People from the Spring community 
    are also actively contributing to improving the project.
    </td>
   </tr>
@@ -208,7 +208,7 @@ that can affect the decision-making process for the framework.
 the software.
 
 * **System Architects** - [Phil Webb](https://spring.io/team/pwebb) is the lead architect of the Spring Boot project. Along 
-with his colleagues at Pivotal, they are the ones forming the architecture of the application.
+with his colleagues at Pivotal, they are the ones forming the architecture of the framework.
 
 * **Courses and instructors** - Even though these stakeholders can fit in the 
 *Communicators category*, our team has decided they deserve a separate one. There are 
@@ -228,8 +228,8 @@ dependent on the development of Spring Boot. Some examples are [JHipster](https:
 [here](https://www.javaguides.net/2018/10/free-open-source-projects-using-spring-boot.html).
 
 ## Integrators and Decision-making process
-Spring Boot is an avid example of an open-source system. It is backed up by a company - 
-Pivotal and is accepting contributions from basically anyone who complies with their 
+Spring Boot is an avid example of an open-source system. It is backed up by a company 
+(Pivotal) and is accepting contributions from basically anyone who complies with their 
 code of conduct and signs a release form. All of the work is done in GitHub, and the 
 mergers and maintainers of the code are members of the Pivotal team. The process analysis 
 is based on some of the most commented issues and pull requests in the Spring Boot repository 
@@ -255,8 +255,8 @@ of those projects voice their concerns or comments. Issues might be declined if 
 postponed for too long and become irrelevant, or if the Spring Boot team decides it is not in 
 the direction they want to bring the product.
 
-Work is done on release branches (e.g. 2.1.3.RC, 2.1.4.M2, etc.) following their release train. 
-Those branches are regularly merged into the Master branch of the project. PRs are merged into 
+Work is done on release branches (e.g. `gh-1234`, `gh-4567`, etc.) or directly in the target
+maintenance branch (e.g. `2.0.x`, `2.1.x`) and then merged forward to `master`. PRs are merged into 
 the release branch by members of the team. Most often these members are 
 [Andy Wilkinson](https://github.com/wilkinsona) or [Phil Webb](https://github.com/philwebb), 
 as well as  [Stéphane Nicoll](https://github.com/snicoll). [Phil Webb](https://github.com/philwebb) 
@@ -294,7 +294,7 @@ conclusion that the following three people would be the most interesting to cont
   <tr>
    <td>[Phil Webb](https://github.com/philwebb)
    </td>
-   <td>Co-creator of the project and active on GitHub
+   <td>Project lead and active on GitHub
    </td>
   </tr>
   <tr>
@@ -331,7 +331,7 @@ Spring Boot includes the following capabilities, also described in the
 and this [article](https://dzone.com/articles/what-is-spring-boot):
 
 * Provide an opinionated and out-of-the-box Spring application with 
-pre-selected dependencies, but get out of the way once requirements start to diverge from
+pre-selected configurations, but get out of the way once requirements start to diverge from
 the defaults.
 * Give a range of non-functional features such as metrics, security,
 health checks, embedded servers, and externalized configuration.
@@ -344,7 +344,7 @@ such as XML descriptors and annotations. While it is true that the Spring Framew
 can be configured without XML as well, it is not 
 as convenient as Spring Boot's configuration.
 * Provide CLI (Command Line Interface) tool to develop and test Spring Boot 
-applications (Java, Groovy or Kotlin) from command prompt very conveniently and quickly.
+applications from command prompt very conveniently and quickly.
 * Offer lots of plugins to develop and test Spring Boot Applications easily 
  using build tools like Maven and Gradle.
 * Provide the opportunity to use an embedded in-memory database or effortlessly connect 
@@ -377,13 +377,13 @@ which offers powerful object-mapping abstractions.
 
 * **Investors** - Spring Boot is financed by Pivotal.
 
-* **License** - Spring Boot is an open-source project released under Apache 2.0 license.
+* **License** - Spring Boot is an open-source project released under the Apache 2.0 license.
 
 * **Communication** - Open and informal discussion about Spring Boot is on 
 [Gitter](https://gitter.im/spring-projects/spring-boot?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge). 
 Spring Boot used to have a forum managed by Pivotal but they [decided](http://forum.spring.io/forum/spring-projects/boot/751211-forum-deactivated)
-to move it over to Stackoverflow. Some of the communication is also happening under GitHub 
-issue tracking.
+to move it over to Stackoverflow. Some of the communication is also happening on the GitHub 
+issue tracker.
 
 * **Issue Tracking** - Spring Boot's issues are tracked in GitHub issue tracking environment. 
 People can also submit pull requests on GitHub.
@@ -397,7 +397,7 @@ application, the project will be generated differently, so the end-user will pro
 using all the dependencies. However, Spring Boot project has to maintain all the options and
 therefore is dependent on a number of third-party software. Key dependencies include 
 Maven/Gradle for dependency management, Tomcat/Jetty/Undertow for Java servlet containers
-and the underlying Spring framework itself.
+and the Spring ecosystem itself.
 
 * **Platform** - Spring Boot is usually run on Windows, Ubuntu and other Linux based 
 operating systems but it can run everywhere where Java Runtime Environment is available.
@@ -415,8 +415,8 @@ Spring Boot offers. Other competitors include Flask (Python) and ASP.NET Core (C
 # Functional View
 
 In the [System Scope & Responsibilities](#system-scope-responsibilities) section, we discussed 
-what functionalities and capabilities Spring Boot has. In this part, an overview is given of how 
-the system interacts with its users and external entities. We try to present the Spring Boot 
+what features and capabilities Spring Boot has. In this part, an overview is given of how 
+the system interacts with its users and external entities. We try to present Spring Boot 
 in a way that people working with Java and the Spring ecosystem can get a general idea of 
 what it is about. 
 
@@ -429,24 +429,24 @@ what it is about.
  section of this chapter. The interactions between the different functional elements 
  are shown in *Figure 3*.
   
- Generally, the functionalities provided by the project are aimed at the software developers 
+ Generally, the features provided by the project are aimed at the software developers 
  who want to use the Spring ecosystem in their projects. It is a Rapid Application Development 
- framework which allows for swift setup of a new project while maintaining customizability.
+ framework which allows for swift setup of a new project while allowing for customizations.
  
  ## Functional Capabilities
  
- A short walk through the initial parts of an application's lifecycle will explain where 
- Spring Boot is positioned in the development process and how the project helps it. For the purpose 
- of this example we assume that the developers have already chosen Java as their primary language 
- and Spring Boot as the tool to kick-off the project. 
+A short walk through the initial parts of an application's lifecycle will explain where 
+Spring Boot is positioned in the development process and how the project helps it. For the purpose 
+of this example we assume that the developers have already chosen Java as their primary language 
+and Spring Boot as the tool to kick-off the project. 
  
- For the sake of simplicity, the example project consists of a Database connection and a 
- REST service.
+For the sake of simplicity, the example project consists of a Database connection and a 
+REST service.
  
 The project is started by choosing one of the provided [starters](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#using-boot-starter). 
- They are conveniently bundled dependency descriptors used to simplify the dependency files. 
- Developers can now include a single dependency for a certain functionality (e.g. working 
- with an ORM) instead of the large number of dependency declarations needed otherwise. 
+They are conveniently bundled dependency descriptors used to simplify the dependency files. 
+Developers can now include a single dependency for a certain functionality (e.g. working 
+with an ORM) instead of the large number of dependency declarations needed otherwise. 
 
 The Spring Boot CLI can optionally be used to write Groovy scripts for fast 
 prototyping and creating the project. It gives an alternative to just picking starters 
@@ -454,11 +454,11 @@ and writing boilerplate code in Java.
 
 Developers can then opt-in to the [auto-configuration](https://docs.spring.io/spring-boot/docs/current/reference/html/using-boot-auto-configuration.html) 
 functionality with a simple annotation. It is one of the more powerful time-saving tools in the 
-Spring Boot toolset. Based on all the dependencies in the classpath (configured previously 
-using the starters), the framework attempts to configure the application. For example, if
-`HSQLDB` is in the classpath, an in-memory database will be configured with default settings 
-and values which are based on best practices and common usage models. Of course, Spring Boot 
-always gives precedence to user-created configurations over default values.
+Spring Boot toolset. Based on the dependencies on the classpath, the framework attempts to
+configure the application. For example, if `HSQLDB` is on the classpath, an in-memory
+database will be configured with default settings and values which are based on best
+practices and common usage models. Of course, Spring Boot always gives precedence to
+user-defined configurations over auto-configuration.
 
 As the example project is a web-application which exposes a REST endpoint, a web-server 
 is needed. Spring Boot provides [embedded web-servers](https://docs.spring.io/spring-boot/docs/current/reference/html/howto-embedded-web-servers.html) 
@@ -469,23 +469,23 @@ In order to speed up the development process even further, quality-of-life impro
 module [dev tools](https://docs.spring.io/spring-boot/docs/current/reference/html/using-boot-devtools.html) 
 such as automatic restarts and resource caching can be used.  
 
-Using the provided tools the example project is now able to expose a REST endpoint and 
+Using the provided tools, the example project is now able to expose a REST endpoint and 
 store information in an in-memory database using only a few annotations and can be contained 
 in a single executable `.jar` file. However, a running app needs to be monitored and audited. 
-Spring Boot offers a solution to that issue as well with 
-[Spring Actuator](https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-endpoints.html).
+Spring Boot offers a solution to that issue as well with the 
+[Actuator](https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-endpoints.html).
 The Actuator provides endpoints such as `healthcheck` and `auditevents` to ease that process.
   
 ## External Interfaces
 
 Spring Boot makes it easier to start up and run a production-ready software quickly. 
-However, most of the functionalities (except the Actuator) it has, are provided by external sources. 
+However, most features (except the Actuator) it has, are provided by external sources. 
 Creating a software application can be complicated but is helped by the various projects 
 in the Spring ecosystem - from managing work with a database with the Spring Data projects 
 to Spring Cloud creating web applications with Spring MVC. All of those can be configured 
 separately, but Spring Boot is very good at configuring and orchestrating them. It is created 
-to alleviate the difficulties when creating an application and to allow the developers to 
-focus on the business problem they are faced with.
+to alleviate the difficulties when creating an application and to allow developers to 
+focus on the business problem they are facing with.
 
 As mentioned in the [System Scope & Responsibilities](#system-scope-responsibilities) 
 Spring Boot is the answer to the critique of the Spring ecosystem and its steep learning curve. 
@@ -516,20 +516,20 @@ applications.
 on classpath content. 
 - `spring-boot-test` contains annotations and methods to write tests.
 - `spring-boot-test-autoconfigure` automatically configures the tests and their dependencies 
-based on what is present in the classpath.
-- `spring-boot-devtools` is a toolset for quicker and smoother development with functionalities 
+based on what is present on the classpath.
+- `spring-boot-devtools` is a toolset for quicker and smoother development with features 
 such as automatic restarts.
 - `spring-boot-loader` allows a Spring Boot application to be packaged in a single 
 stand-alone Java archive (`.jar`) with all dependencies bundled (including web servers).
 - `spring-boot-cli` is another developer oriented module providing a simple command line 
-tool to quickly configure and get an application up and running.
+tool to quickly script and get an application up and running.
 - `spring-boot-starters` are a set of modules providing prepackaged dependency descriptors 
 so that developers need to manage only a single dependency.
 
 ## Codeline Organization Model
 
 For creating the Codeline Organization Model, we carefully analyzed the project directory 
-structure from [Spring Boot GitHub repository](https://github.com/spring-projects/spring-boot). 
+structure from the [Spring Boot GitHub repository](https://github.com/spring-projects/spring-boot). 
 The overall code structure of Spring Boot can be seen in *Figure 4*, with the main 
 application folder `spring-boot-project` being further expanded.
 
@@ -541,7 +541,7 @@ The **Functionality** part of Spring Boot contains multiple modules that are gro
 in the `spring-boot-project` folder. These modules were described in detail in 
 [Module Structure](#module-structure). Each of the sub-folders (with a few exceptions 
 such as `spring-boot-starters` which contains XML dependency 
-descriptors) is organized into a `src` folder, which contains `main` and `test` 
+descriptors) are organized into a `src` folder, which contains `main` and `test` 
 folders for module source code and module unit tests (following the 
 [standard maven structure](https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html)) 
 and a separate `pom.xml` file among other properties and configuration files.
@@ -551,7 +551,7 @@ for deployment (`/spring-boot-deployment-tests`) and integration
 (`/spring-boot-integration-tests`) tests. For Continuous Integration the 
 [Concourse](https://ci.spring.io/) pipeline  scripts are grouped in `ci`.
 The folders `eclipse` and `idea`  are used for providing support for 
-[Eclipse](https://www.eclipse.org/) and [IntelliJ](https://www.jetbrains.com/idea/) 
+[Eclipse](https://www.eclipse.org/) and [IntelliJ IDEA](https://www.jetbrains.com/idea/) 
 to people that want to contribute.
 
 The **Documentation Part** is contained in `spring-boot-samples` with Java sample 
@@ -560,9 +560,9 @@ line application. [Javadoc](https://docs.oracle.com/javase/8/docs/technotes/tool
 and [Asciidoctor](https://asciidoctor.org/) documentation are found in `spring-boot-docs`.
 Other Asciidoctor file are placed in the root folder explaining the contribution pipeline, 
 how to get support and so on. The repository root also contains the 
-[maven wrapper](https://github.com/takari/maven-wrapper) to ensure that Spring Boot Maven
- build has everything necessary to be run independently. By using the maven wrapper,
-`mvnw`, the reference documentation in HTML format can be built. The generated documentation 
+[maven wrapper](https://github.com/takari/maven-wrapper) to ensure that the build has
+everything necessary to be run independently. By using the maven wrapper, `mvnw`, the
+reference documentation in HTML format can be built. The generated documentation 
 can be found at `spring-boot-project/spring-boot-docs/target/generated-docs/reference/html`.
 
 ## Common Design Model
@@ -574,7 +574,7 @@ actual program code and the unit test code are structured as follows.
 
 ```
 src/main/java/com/foo/Bar.java
-src/test/java/com/foo/BarTest.java
+src/test/java/com/foo/BarTests.java
 ```
 
 Apart from the obvious codeline organization advantage, this ensures that unit tests are 
@@ -587,7 +587,7 @@ As most big Java projects, Spring Boot project uses the
 paradigm. This has well-known
 advantages such as encapsulation, inheritance, and polymorphism. While conducting an
 interview with Stéphane Nicoll, he explicitly stated that the Spring Boot team tries to 
-keep classes and class contents as private as possible. 
+keep classes and classes content as private as possible. 
 
 #### Dependency injection
 Spring Boot uses the
@@ -599,7 +599,7 @@ annotation in most cases for dependency injection which was introduced by the Sp
 
 #### Modularity
 When discussing with Stéphane Nicoll from the Spring Boot team, he stated that the Spring Boot 
-aims to have stand-alone modules which are not interdependent. The goal of this is to 
+project aims to have stand-alone modules which are not interdependent. The goal of this is to 
 minimize coupling which increases maintainability of the code. While they make the code
 modular, they also wish
 to avoid making 
@@ -616,7 +616,7 @@ The default format for Spring Boot log messages is the following:
 2014-03-05 10:57:51.112  INFO 45469 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/7.0.52
 2014-03-05 10:57:51.253  INFO 45469 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
 ```
-Spring Boot also supports coloring for messages, the default color scheme is provided in the table below:
+Spring Boot also supports colorized for messages. The default color scheme is described in the following table:
 
 | Level   | Color  |
 |---------|:-------| 
@@ -630,44 +630,43 @@ Spring Boot also supports coloring for messages, the default color scheme is pro
 ***Table 3*** - Logging color schemes
 
 By default, the logs are only displayed in the console. They can also be stored in a file,
-which requires configuration in the `application.properties` file (see 
-[documentation](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#boot-features-logging-file-output)).
+which requires configuration (e.g. in `application.properties`), see the 
+[documentation](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#boot-features-logging-file-output).
 
 ## Testing and Release Models
 
 ### Testing process
 
-Integration tests, located in module `ci`, are executed with every Pull request, as well as on
+Integration tests, located in the `spring-boot-tests`, are executed with every Pull request, as well as on
 every release. In addition, when a version is ready to be released, deployment tests are also
 executed. They are located in the same module as the integration ones.
 
 ### Release process
 
-Spring Boot project is using `Pivotal's proprietary Continuous Integration tool` - 
-[Concourse](https://ci.spring.io/). The release versions of the project consist of 
-[milestones](https://github.com/spring-projects/spring-boot/milestones) (*M#*), 
+Spring Boot project is using [Concourse](https://ci.spring.io/). The release versions of
+the project consist of [milestones](https://github.com/spring-projects/spring-boot/milestones) (*M#*), 
 release candidates (*RC#*) and general availability releases (*RELEASE*) 
-(expected to be very stable and feature complete). In addition, there are service releases, 
-which are maintenance releases that come after a major release. Each of the releases is available 
-in the project's [milestone repository](https://repo.spring.io/milestone/).
+(expected to be stable and feature complete). In addition, there are service releases, 
+which are maintenance releases that come after a major release. Each release is available 
+on [repo.spring.io](https://repo.spring.io), GA are also available on Maven Central.
 
-A prime example of the release train is the release of the major version `2.0.0` and can be 
-seen in  *Figure 5*.
+A prime example of the release proccess is the release of the major version `2.0.0` and can
+be seen in  *Figure 5*.
 
 ![Spring Boot release train](figures/release_train.PNG)
 
-***Figure 5*** - Spring Boot release train for the major version 2.0.0
+***Figure 5*** - Spring Boot release process for the major version 2.0.0
 
 Like all the other projects in the Spring ecosystem, there is a strong 
 [set of rules](https://github.com/spring-projects/spring-build-gradle/wiki/Spring-project-versioning) 
 for versioning the releases of Spring Boot. This is not just following best practices, but the 
 [community download page](https://github.com/spring-projects/spring-build-gradle/wiki/Community-download-page) 
-depends on the naming and semantic details of the release artefacts.
+depends on the naming and semantic details of the release artifacts.
 
 Scripts for releasing a version can be found in the `ci` module. Each version is accompanied 
 by release notes which can be found in the
 [wiki](https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.2-Release-Notes) 
-section of the GitHub repository. The notes usually contain information on how to upgrade 
+section of the GitHub repository. Release notes contain information on how to upgrade 
 from a previous version, new noteworthy features, as well as various deprecations.
 
 # Technical debt
@@ -687,14 +686,14 @@ does the project's team do to keep it to a minimum.
 
 ### Static code analysis
 
-Static code analysis is done using 
+Static code analysis can be done using 
 [SonarQube](https://sonarcloud.io/dashboard?id=viktoriya-kutsarova_spring-boot), 
 to understand the technical debt of Spring Boot. *Figure 6* displays a general overview 
 of the bugs and vulnerabilities, as well as code smells in the project.
 
 ![Bugs and code smells](figures/number_of_vulnerabilities_and_code_smells.png)
 
-***Figure 6*** - Bugs and code smells in Spring Boot project based on *sonarcloud* report
+***Figure 6*** - Bugs and code smells in Spring Boot project based on the *sonarcloud* report
 
 There are four main elements that the static code analysis tool emphasizes on:
 - **Bugs and vulnerabilities** - Most of the bugs identified by SonarQube are minor. Still, 
@@ -727,7 +726,7 @@ Spring Boot overall has a small amount of technical debt. Some of it is known to
 development team. This [deliberate](https://hackernoon.com/there-are-3-main-types-of-technical-debt-heres-how-to-manage-them-4a3328a4c50c) 
 debt is placed in a [separate milestone](https://github.com/spring-projects/spring-boot/milestone/94). 
 The issues in this backlog are not yet scheduled for a particular release and are mostly bugs 
-or enhancements that Spring Boot team wants to solve in a future version.
+or enhancements that the Spring Boot team wants to solve in a future version.
 
 ### Insights from Stéphane Nicoll
 
@@ -742,8 +741,8 @@ with the new reactive style. The team decided to rewrite the whole module from s
 but kept its public API.
 
 - **For team attention** - we have noticed flagging of issues with a label `for-team-attention`.
-Spring Boot team uses it in the following way: once an issue is created (either from a team
-member or from a contributor), someone from Spring Boot labels it. The team holds two 
+The Spring Boot team uses it in the following way: once an issue is created (either from a team
+member or from a contributor), a team member can label it. The team holds two 
 meetings every week. During those meetings, the person who marked an issue explains 
 the reasoning behind it, and then the participants in the meeting collectively decide
 how to handle the problem.
@@ -751,12 +750,12 @@ how to handle the problem.
 Stéphane Nicoll confirmed our finding that the Spring Boot team tries to keep the technical
 debt to a minimum and is building its code base with great care for readability and quality.
 A remarkable fact is that the Spring Boot team does not use a technical debt identification 
-tool, apart from the static code analysis tool provided by the IDEs. As Stéphane stated, 
+tool, apart from the static code analysis tool provided by IDEs. As Stéphane stated, 
 "we don't use any tool, we don't see any benefit from using one". The team works 
 "in an organic way", relies mostly on experience, strong sense of belonging to the project 
 and is heavily influenced by the Spring community. In his words:
 
-> The community will kick our ass, if we do something wrong.
+> If we do something wrong, the community will kick our butts anyway.
 
 ## Testing Debt
 Issue analysis prior to interview with Stéphane Nicoll made us believe that there 
@@ -769,12 +768,12 @@ confirmed while conducting the interview.
 The project has a quite advanced testing environment with embedded Docker containers 
 ([#10516](https://github.com/spring-projects/spring-boot/issues/10516)) and Servlets 
 which makes test coverage of the project high. The test suite is 
-simple to run in command line and requires only `mvn test` command.
+simple to run on the command line with `./mvnw verify`.
 
 IntelliJ IDEA built-in code coverage tool was used to run unit tests on most important 
 modules, which were `spring-boot`, `spring-boot-actuator`, 
 `spring-boot-actuator-autoconfigure` and `spring-boot-autoconfigure`. 
-The results show that the modules are very well tested 
+The results show that those modules are very well tested 
 with class and line coverage being mostly over 90% (see *Table 4*). 
 
 | Module                             | Class Coverage  | Line Coverage |
@@ -795,7 +794,7 @@ on potential testing debt and make this information available to contributors.
 ## Evolution of technical debt
 
 In order to “calculate the trends of the technical debt time series” [4] for 
-Spring Boot project first, we need to take a look at the history of the whole 
+the Spring Boot project, we first need to take a look at the history of the whole 
 Spring Framework. The evolution of Spring Framework from 
 [interface21](https://spring.io/blog/2006/12/16/why-the-name-interface21)
 to [SpringSource](https://www.crunchbase.com/organization/springsource#section-overview) 
@@ -827,7 +826,7 @@ Debt arising from here is related to the decreasing difference between
 Spring Boot’s dependency management and the platform’s dependency management,
 the reason that determined the Spring Team to announce
 [Spring IO Platform end-of-life](https://spring.io/blog/2018/04/09/spring-io-platform-end-of-life-announcement)
-with Cairo being the last main version.
+with Cairo being the last maintained version.
 
 
 The fact that “software process evolution has a clear effect to technical debt” [5]
@@ -850,12 +849,12 @@ did not manage to find any major technical debt issues.
 
 Spring Boot's team generally uses [Labels](https://github.com/spring-projects/spring-boot/labels) 
 to identify and characterize issues. There are currently 29 labels, but none of them is directly 
-related to technical debt (e.g. technical-debt, or refactoring). 
+related to technical debt (e.g. `technical-debt`, or `refactoring`). 
 
 On the other hand, when searching through the issues on GitHub, there are less than 
 [90 issues](https://github.com/spring-projects/spring-boot/search?q=refactor&type=Issues) 
 out of more than [16000 issues](https://github.com/spring-projects/spring-boot/search?q=&unscoped_q=&type=Issues) 
-in total mentioning technical debt or refactoring. Usually, there is people proposing some 
+in total mentioning technical debt or refactoring. Usually, these are proposing some 
 behavioral changes (for example [#14680](https://github.com/spring-projects/spring-boot/pull/14680)). 
 There are some issues created by the team with known technical debt 
 ([#14412](https://github.com/spring-projects/spring-boot/issues/14412)). However, the maintainers 
@@ -872,7 +871,7 @@ They can be considered technical debt, but a very small one.
 
 The cleanliness of the code is helped by the reviews of team members before merging. 
 Another reason is the [provided](https://github.com/spring-projects/spring-boot/blob/master/CONTRIBUTING.adoc#code-conventions-and-housekeeping) 
-code style guidelines and schemes for IntelliJ and Eclipse, which disallow comments in the code, 
+code style guidelines and schemes for IntelliJ IDEA and Eclipse, which disallow comments in the code, 
 as well as other polluting elements as unused imports.
 
 # Bibliography
